@@ -81,7 +81,7 @@ li {
   right: 0;
   z-index: 1;
   background-color: rgba(7, 7, 7, 0.434);
-  width: 120px;
+  width: 100px;
   padding: 10px 0;
 }
 
@@ -102,11 +102,11 @@ li {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 75%;
+ /*  top: 75%; */
   right: 0;
   z-index: 1;
   background-color: rgba(7, 7, 7, 0.434);
-  width: 120px;
+  width: 100px;
   padding: 10px 0;
 }
 
@@ -132,7 +132,7 @@ input[type=checkbox] {
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 /* CIRCLES ACTIVITIES */
@@ -758,11 +758,17 @@ input[type=checkbox] {
   align-items: center;
   justify-content: center;
 }
+/* Back to Top button */
 .back-to-top {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(7, 7, 7, 0.434);
+  padding: 4px;
+  display: none; 
+}
+.back-to-top.show {
+  display: block; /* Display when it has the 'show' class */
 }
 
 .bottom-footer-title h4 {
@@ -959,8 +965,14 @@ input[type=checkbox] {
   .doggies-title p {
     margin-top: 20%;
   }
+  .weather-widget {
+    top: 41%;
+  }
 
 }
+
+
+
 /* TABLET DEVICES */
 @media (min-width: 769px) {
   .mobile-banner {
@@ -1040,7 +1052,12 @@ input[type=checkbox] {
   .cafe-col-1 {
     order: 2;
   }
+  .weather-widget {
+    top: 41%;
+  }
 }
+
+
 /* DESKTOP AND LARGER DEVICES */
 @media (min-width: 870px) {
   .shop-row {
@@ -1058,17 +1075,7 @@ input[type=checkbox] {
     gap: 100px;
     padding: 0 95px;
   }
-/*   .social-icon {
-    flex-direction: column;
-    top: 15%;
-    right: 0;
-    width: 120px;
-    padding: 10px 0;
-  }
-  .social-icon img {
-    width: 50px;
-    margin: 0 auto;
-  } */
+
   .footer-row {
     display: flex;
     justify-content: space-between;
@@ -1114,5 +1121,8 @@ input[type=checkbox] {
   }
   .cafe-col-1 {
     order: 0;
+  }
+  .weather-widget {
+    top: 75%;
   }
 }/*# sourceMappingURL=style.css.map */

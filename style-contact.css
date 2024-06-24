@@ -79,7 +79,7 @@ li {
   right: 0;
   z-index: 1;
   background-color: rgba(7, 7, 7, 0.434);
-  width: 120px;
+  width: 100px;
   padding: 10px 0;
 }
 
@@ -99,11 +99,11 @@ li {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 75%;
+  /* top: 75%;  */
   right: 0;
   z-index: 1;
   background-color: rgba(7, 7, 7, 0.434);
-  width: 120px;
+  width: 100px;
   padding: 10px 0;
 }
 
@@ -426,12 +426,19 @@ hr {
   justify-content: center;
 }
 
+/* Back to Top button */
 .back-to-top {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(7, 7, 7, 0.434);
+  padding: 4px;
+  display: none; 
 }
+.back-to-top.show {
+  display: block; /* Display when it has the 'show' class */
+}
+
 .bottom-footer-title h4 {
   color: #fff;
   line-height: 30px;
@@ -533,7 +540,12 @@ hr {
   .bottom-footer-title a {
     font-size: 12px;
   }
+  .weather-widget {
+    top: 41%;
+  }
 }
+
+
 /* TABLET VIEW */
 @media (min-width: 769px) {
   .operating-details {
@@ -568,6 +580,10 @@ hr {
   .bottom-footer-title a {
     font-size: 12px;
   }
+
+  .weather-widget {
+    top: 41%;
+  }
  
 }
 
@@ -595,6 +611,8 @@ hr {
   .bottom-footer-title a {
     font-size: 17px;
   }
-
+  .weather-widget {
+    top: 75%;
+  }
 
 }/*# sourceMappingURL=style.css.map */

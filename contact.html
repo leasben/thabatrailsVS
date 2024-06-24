@@ -50,19 +50,20 @@
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit totam obcaecati quod, delectus quos excepturi? Possimus ut maiores asperiores velit, provident, culpa facere fugit veritatis, in optio porro eligendi molestias temporibus officiis soluta quos labore. Nihil facere expedita ex eius, incidunt distinctio facilis cumque veritatis. facere fugit veritatis, in optio porro eligendi molestias temporibus officiis soluta quos labore. Nihil facere expedita ex eius, incidunt distinctio facilis cumque veritatis</p>
         </div>
       </div>
-      <div class="social-icon">
-        <a href="#" id="toggleIcons"><img src="images/icons8-info-100.svg" alt="Toggle Icons"></a>
-        <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
-        <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
-        <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter"></a>
-        <a href="https://strava.com" target="_blank"><img src="images/social-4.svg" alt="strava"></a>
-        
-        <!-- WEATHER WIDGET -->
-        <div class="weather-widget">
-            <div id="current-weather">Loading weather...</div>
-            <div id="current-date"></div>
-        </div>
+     <div class="social-icon">
+    <a href="#" id="toggleIcons"><img src="images/icons8-info-100.svg" alt="Toggle Icons"></a>
+    <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+    <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+    <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter"></a>
+    <a href="https://strava.com" target="_blank"><img src="images/social-4.svg" alt="strava"></a>
+    
+    <!-- WEATHER WIDGET -->
+    <div class="weather-widget">
+        <div id="current-weather">Loading weather...</div>
+        <div id="current-date"></div>
     </div>
+</div>
+
     </div>
   </section>
 
@@ -346,11 +347,12 @@
   <div class="bottom-footer-title">
     <h4>&copy Thaba trails 2024 | By <a href="https://powerof9.co.za" target="_blank">Power of 9</a></h4>
   </div>
-  <div class="back-to-top">
-    <a href="#top" class="footer_btn" title="To the top">
+    <!-- Back to Top button -->
+    <div class="back-to-top" id="backToTop">
+      <a href="#top" class="footer_btn" title="To the top">
         <img src="images/icon-back-to-top.png" alt="">
-    </a>
-</div> 
+      </a>
+    </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -418,6 +420,29 @@ $(document).ready(function() {
     }, 3600000);
 });
 </script>
+
+<script>
+  // Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    var backToTop = document.getElementById('backToTop');
+
+    // Function to control visibility based on scroll position
+    function toggleBackToTop() {
+        if (window.scrollY > 100) { // Adjust 100 to the scroll position where you want it to appear
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    }
+
+    // Listen to the scroll event
+    window.addEventListener('scroll', toggleBackToTop);
+
+    // Initial check in case the user starts already scrolled down
+    toggleBackToTop();
+});
+
+ </script>
 
 </body>
 
