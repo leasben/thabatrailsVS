@@ -1,0 +1,641 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700&display=swap");
+:root {
+  --menu-bg: rgba(107, 105, 105, 0.832);
+  --menu-hover-color: #93CC58;
+  --text-color: #737373;
+  --button-bg: #1D60A6;
+  --trails-bg: #93CC58;
+  --header-color: #93CC58;
+  --card-bg: #ECECEC;
+  --upcomin-events-bg: #93CC58;
+  --footer-bg: #93CC58;
+}
+
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--menu-bg);
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* SOCIAL ICONS */
+.banner-image {
+  position: relative;
+}
+
+/* FLICKITY */
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+.flickity-page-dots {
+  bottom: 10px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 15%;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(7, 7, 7, 0.434);
+  width: 120px;
+  padding: 10px 0;
+}
+
+.social-icon a:not(:last-child) {
+  margin-bottom: 15px;
+}
+.social-icon img {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.weather-widget {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 75%;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(7, 7, 7, 0.434);
+  width: 120px;
+  padding: 10px 0;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.menu li a:hover {
+  color: var(--menu-hover-color);
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+}
+
+/* MOUNTAIN BIKING */
+.mountain-biking {
+  border-top: 5px solid var(--trails-bg);
+}
+
+.bike-row {
+  display: grid;
+}
+
+.mountain-biking {
+  background-color: var(--card-bg);
+}
+
+.bike-svg img {
+  width: 120px;
+  height: 120px;
+}
+
+.bike-card-title h2 {
+  color: var(--header-color);
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.bike-card-text p {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.walking-card-text {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* WALKING-RUNNING */
+.walking-running-row {
+  display: grid;
+}
+
+.walking-card-svg img {
+  width: 120px;
+  height: 120px;
+}
+
+.walking-card-title h2 {
+  color: var(--header-color);
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* DOGGIE TRIALS */
+.doggie-trails {
+  background-color: var(--card-bg);
+  border-bottom: 5px solid var(--trails-bg);
+}
+
+.doggie-trails-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.doggie-trails-card-svg {
+  width: 120px;
+  height: 120px;
+}
+
+.doggie-trails-card-title h2 {
+  color: var(--header-color);
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.doggie-trails-card-text {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* FOOTER LINKS SECTION */
+.footer-row {
+  display: flex;
+}
+
+.footer-link-details li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link-details .footer-card-title h2 {
+  color: var(--header-color);
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.footer-link-details .mobile-number a,
+.footer-link-details .landline-number a,
+.footer-link-details .email-add a {
+  font-size: 15px;
+  line-height: 26px;
+  color: #707070;
+}
+.footer-link-details .mobile-number,
+.footer-link-details .landline-number,
+.footer-link-details .email-add {
+  padding-left: 10px;
+}
+
+.footer-menu-links {
+  padding: 15px 0;
+}
+
+.footer-menu-links a {
+  color: #707070;
+  font-size: 15px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+.footer-menu-links a:hover {
+  color: var(--footer-bg);
+}
+
+/* GOOGLE MAP */
+.google-map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 37.5%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.google-map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+/* FORMIDABLE FORM */
+
+.frm_fields_container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; 
+}
+.frm_form_field {
+  margin-bottom: 20px;
+}
+.frm_fields_container input {
+  border: 1px solid var(--text-color);
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+/* Adjust the textarea to be full width */
+ .frm_form_field textarea {
+  width: 100%;
+  border: 1px solid var(--text-color);
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+.frm-g-recaptcha {
+  padding-top: 20px;
+}
+
+
+/* SUBMIT BUTTON */
+.frm_submit {
+  padding: 7px 0;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 18px;
+  width: 120px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  
+}
+
+.frm_submit:hover {
+  background-color: #1e183a;
+  border-radius: 18px;
+  scale: 1.1;
+}
+
+.frm_submit::after {
+  transition: all 0.5s linear;
+}
+
+.frm_submit a {
+  color: #fff;
+}
+
+
+/* BOTTOM FOOTER */
+.bottom-footer {
+  position: relative;
+  background-color: var(--footer-bg);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-to-top {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.bottom-footer-title h4 {
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.social-icon:nth-of-type(odd) {
+  margin-top: 10px;
+}
+
+.bottom-footer-title a {
+  color: #fff;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* MOBILE VIEW*/
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--header-color);
+    right: 0;
+    left: 0;
+    top: 100%;
+    text-align: left;
+    padding: 16px 5px;
+    z-index: 1;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    color: #fff;
+  }
+  button {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .logo img {
+    width: 230px;
+    height: 100px;
+  }
+  .navbar {
+    top: 0;
+    height: 70px;
+  }
+  .social-icon img {
+    width: 50px;
+    margin: 0 auto;
+  }
+  .bike-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .bike-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .bike-card-col-1 {
+    padding: 30px 10px;
+  }
+  .walking-running-row {
+    grid-template-columns: 1fr;
+  }
+  .walking-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .walking-running-col-2 {
+    padding: 30px 10px;
+    order: -1;
+  }
+  .doggie-trails-row {
+    grid-template-columns: 1fr;
+  }
+  .doggie-trails-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .doggie-trails-col-1 {
+    padding: 30px 10px;
+  }
+  .footer-row {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .footer-card-details {
+    text-align: start;
+  }
+  .footer-link-details li {
+    justify-content: start;
+  }
+  .bottom-footer-title h4 {
+    text-align: center;
+  }
+
+  .frm_fields_container {
+    flex-direction: column; 
+    margin-top: 20px;
+  }
+  .frm_form_field input {
+    width: 100%;
+  }
+  .google-map-container {
+    width: 100%;
+    padding-bottom: 75%; 
+    margin-bottom: 20px;
+  }
+
+  .footer-link-details .mobile-number a,
+  .footer-link-details .landline-number a,
+  .footer-link-details .email-add a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+
+}
+
+
+/* TABLET VIEW */
+@media (min-width: 769px) {
+  .bike-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .bike-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .bike-card-col-1 {
+    padding: 30px 10px;
+  }
+  .walking-running-row {
+    grid-template-columns: 1fr;
+  }
+  .walking-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .walking-running-col-2 {
+    padding: 30px 10px;
+    order: -1;
+  }
+  .doggie-trails-row {
+    grid-template-columns: 1fr;
+  }
+  .doggie-trails-card-title h2 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .doggie-trails-col-1 {
+    padding: 30px 10px;
+  }
+  .footer-row {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+  .footer-card-details {
+    text-align: start;
+  }
+  .footer-link-details li {
+    justify-content: start;
+  }
+  .bottom-footer-title h4 {
+    text-align: center;
+  }
+
+  .footer-link-details .mobile-number a,
+  .footer-link-details .landline-number a,
+  .footer-link-details .email-add a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+    .frm_fields_container {
+      flex-direction: column; 
+    }
+    .frm_form_field input {
+      width: 100%;
+    }
+    .google-map-container {
+      width: 100%;
+      padding-bottom: 75%; 
+      margin-bottom: 20px;
+    }
+}
+
+/* DESKTOP AND LARGE DEVICES */
+@media (min-width: 1024px) {
+  .bike-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .walking-running-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .doggie-trails-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-row {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .footer-card-details {
+    text-align: left;
+  }
+  .footer-link-details li {
+    justify-content: start;
+  }
+  .doggie-trails-col-1 {
+    padding: 30px 30px;
+  }
+  .bike-card-col-1 {
+    padding: 30px 30px;
+  }
+  .walking-running-col-2 {
+    padding: 30px 30px;
+    order: 0;
+  }
+
+  .google-map-container {
+    position: relative;
+    width: 45%;
+    padding-bottom: 37.5%; /* 2:1 Aspect Ratio (divide height by width and multiply by 100) */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .google-map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .frm_fields_container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+  }
+  .frm_form_field {
+    margin-bottom: 20px;
+  }
+  
+  .frm_fields_container input {
+    border: 1px solid var(--text-color);
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+  
+  /* Adjust the textarea to be full width */
+   .frm_form_field textarea {
+    width: 100%;
+    border: 1px solid var(--text-color);
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

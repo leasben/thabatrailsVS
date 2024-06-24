@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="style-trails.css" />
+  <title>Trails</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="index.html"><img src="images/thaba-trails-logo.svg" alt="Logo"></a>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="/index.html#upcoming-events">Upcoming Events</a></li>
+        <li><a href="/index.html#visit-shop">Visit Our Shop</a></li>
+        <li><a href="/index.html#cafe">Cafe</a></li>
+        <li><a href="/index.html#wildlife">Wildlife</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- BANNER IMAGE -->
+
+  <section class="banner-image">
+        <!-- Flickity HTML init -->
+      <!-- <div class="carousel" data-flickity='{ "autoPlay": 2000, "pauseAutoPlayOnHover": false }'>
+        <div class="carousel-cell">
+          <img src="images/trails-banner.png" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="images/trails-banner.jpg" alt="">
+        </div>
+        <div class="carousel-cell">
+          <img src="images/trails-banner-2.jpg" alt="">
+        </div>
+      </div> -->
+       <div class="mobile-banner"><img src="images/trails-home-banner.jpg" alt=""></div> 
+      <div class="desktop-banner"><img src="images/trails-banner-2.jpg" alt=""></div>
+      <div class="social-icon">
+        <a href="#" id="toggleIcons"><img src="images/icons8-info-100.svg" alt="Toggle Icons"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter"></a>
+        <a href="https://strava.com" target="_blank"><img src="images/social-4.svg" alt="strava"></a>
+        
+        <!-- WEATHER WIDGET -->
+        <div class="weather-widget">
+            <div id="current-weather">Loading weather...</div>
+            <div id="current-date"></div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- TRAILS RING -->
+  <section class="trails-ring">
+    <div class="container">
+    <div class="top-trails-ring">
+      <div class="ring">
+        <img src="images/white-ring.svg" alt="ring">
+      </div>
+        <h2 class="heading-trails">Trails on offer</h2>
+      <div class="ring">
+        <img src="images/white-ring.svg" alt="ring">
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- TRAILS DETAILS INFORMATION -->
+   <section class="trails-info-section">
+    <div class="container">
+      <div class="trails-heading">
+        <h3>Mountain Biking - 10km, 25km, and 40km</h3>
+      </div>
+      <div class="trails-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula vel nostra, dapibus sociis arcu litora fermentum lacinia elementum eu velit. Mollis egestas libero etiam nisl turpis diam sed metus suscipit, cursus orci vivamus per pellentesque praesent taciti sociis, sodales donec iaculis facilisi neque non sollicitudin dapibus.</p>
+      </div>
+      <div class="trails-heading">
+        <h3>Walking, running, and hiking - 5km and 10km</h3>
+      </div>
+      <div class="trails-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula vel nostra, dapibus sociis arcu litora fermentum lacinia elementum eu velit. Mollis egestas libero etiam nisl turpis diam sed metus suscipit, cursus orci vivamus per pellentesque praesent taciti sociis, sodales donec iaculis facilisi neque non sollicitudin dapibus.</p>
+      </div>
+      <div class="trails-heading">
+        <h3>Doggie trail - 5km</h3>
+      </div>
+      <div class="trails-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula vel nostra, dapibus sociis arcu litora fermentum lacinia elementum eu velit. Mollis egestas libero etiam nisl turpis diam sed metus suscipit, cursus orci vivamus per pellentesque praesent taciti sociis, sodales donec iaculis facilisi neque non sollicitudin dapibus.</p>
+      </div>
+      <div class="features-key">
+        <p>Key Features:</p>
+        <ul>
+          <li><b>Lorem ipsum dolor</b>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit ligula praesent, dapibus</li>
+            <li><b>Lorem ipsum dolor</b>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit ligula praesent, dapibus</li>
+              <li><b>Lorem ipsum dolor</b>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit ligula praesent, dapibus</li>
+        </ul>
+      </div>
+      <div class="last-para"> Lorem ipsum dolor sit amet consectetur adipiscing elit ligula praesent, dapibus ipsum dolor sit amet consectetur adipiscing elit ligula praesent,</div>
+    </div>
+   </section>
+ 
+  <!-- TRAILS MAP -->
+  <section class="trails-map">
+    <div class="container"></div>
+    <div class="tails-map-banner">
+      <div class="carousel-map" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false }'>
+        <div class="carousel-cell-map">
+          <img src="images/home-trails.png" alt="">
+        </div>
+        <div class="carousel-cell-map">
+          <img src="images/home-trails.png" alt="">
+        </div>
+        <div class="carousel-cell-map">
+          <img src="images/home-trails.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- PERMITS -->
+ <section class="buy-permits">
+  <div class="permits-heading">
+    <h2>Purchase a permit</h2>
+  </div>
+ </section>
+
+ <!-- PERMITS DETAILS -->
+ <section class="permits-cards">
+  <div class="container">
+  <div class="permits-row">
+    <div class="card-body">
+      <div class="permits-card-col-1">
+        <div class="permits-card-image">
+          <img src="images/cycling-permit.svg" alt="">
+        </div>
+        <div class="permits-card-title">
+          <h4>Cycling Permit</h4>
+        </div>
+        <div class="permits-card-details">
+          <ul>
+            <li class="day-permit"><p>Day Permit</p></li>
+            <li class="permit-price"><p>R70 per person</p></li>
+            <hr/>
+            <li class="entries"><p>20 Entries</p></li>
+            <li class="permit-price"><p>R700 per person</p></li>
+            <hr/>
+            <li class="annual-permit"><p>Annual Permit</p></li>
+            <li class="permit-price"><p>R2 000 per person</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="permits-card-col-2">
+        <div class="permits-card-image">
+          <img src="images/walking-permit.svg" alt="">
+        </div>
+        <div class="permits-card-title">
+          <h4>Walking, Running and <br>Hiking Permit</h4>
+        </div>
+        <div class="permits-card-details">
+          <ul>
+            <li class="day-permit"><p>Day Permit</p></li>
+            <li class="permit-price"><p>R40 per person</p></li>
+            <hr/>
+            <li class="entries"><p>10 Entries</p></li>
+            <li class="permit-price"><p>R300 per person</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="permits-card-col-3">
+        <div class="permits-card-image">
+          <img src="images/doggie-permit.svg" alt="">
+        </div>
+        <div class="permits-card-title">
+          <h4>Doggie Trails</h4>
+        </div>
+        <div class="permits-card-details">
+          <ul>
+            <li class="day-permit"><p>Day Permit</p></li>
+            <li class="permit-price"><p>R40 per person</p></li>
+            <hr/>
+            <li class="entries"><p>10 Entries</p></li>
+            <li class="permit-price"><p>R300 per person</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+
+ <!-- RULES REGULATIONS -->
+ <section class="regulations">
+  <div class="container">
+  <div class="rules-heading">
+    <h2>Rules, Regulations<br> And Indemnity</h2>
+  </div>
+  <div class="rules-title">
+    <p>Please Read And Take Note Of The Following</p>
+  </div>
+ <div class="rules-regulations">
+      <div class="regulations-items">
+        <ol>
+          <li>NO Helmet! No Ride!</li>
+          <li>No dogs allowed on the trails</li>
+          <li>Entry fee must be paid before embarking on your activity or you wont be allowed access</li>
+          <li>All minors to be accompanied by an adult</li>
+          <li>Keep to the designated trails ONLY</li>
+          <li>Follow the directional signs at all times</li>
+          <li>Do not cross between trails and unmarked paths</li>
+          <li>Do not place anything on the trails</li>
+          <li>Do not carry any valuables</li>
+          <li>Overtake only when its safe to do so</li>
+          <li>Do not ride alone</li>
+          <li>Pull off to the side of the trail when stopped to allow other trail users to pass safely</li>
+          <li>Littering will not be tolerated</li>
+          <li>Please try to create as little noise as possible near the bird hides</li>
+          <li>Be aware of snakes and other animals which may be along the trails</li>
+          <li>Do not remove, cut, break of destroy in any manner the flora found 
+            within TRAIL PARK</li>
+          <li>No picnics are allowed on the trails</li>
+          <li>NO Firearms are permitted</li>
+          <li>No feeding of the animals</li>
+          <li>No water is to be consumed from the dams and rivers on site, as 
+            water is not potable</li>
+        </ol>
+      </div>
+    <div class="indemnity">
+      <p>Management have the right of admission and further right to bring criminal and civil proceedings against all those who do not obey the abovementioned rules.</p>
+      <ul>
+        <li>Take cognizance of the fact that we are situated in a nature reserve, 
+          and that all the etiquette expected in any other nature reserve is  
+          expected here.
+      </li>
+      <li>Be aware that certain areas within the AECI property and the 
+        Modderfontein Nature Reserve are strictly out of bounds, because of 
+        the activities taking place are dangerous and environmentally sensitive.
+      </li>
+      <li>Please take note that the tar roads are utilized by heavy machinery and 
+        transport vehicles, for this reason all cyclists, runners and hikers are to 
+        remain on the designated trails. Riding, running or hiking on the road is  
+        prohibited, unless otherwise indicated in certain sections.</li>
+      </ul>
+    </div>
+ </div>
+</div>
+ </section>
+
+ <!-- INDEMNITY SECTION -->
+
+ <section class="indemnity-section">
+  <div class="container">
+  <div class="indemnity-heading">
+    <h2>Indemnity</h2>
+  </div>
+  <div class="indemnity-sub-title">
+    <p>By entering these premises you acknowledge, agree and accept that:</p>
+  </div>
+  <div class="indemnity-text">
+    <p>running, hiking and/or riding a mountain bicycle on any terrain is a dangerous activity with inherent risk of personal injury, disability, death, or damage to property;<br>
+      injuries are common and can be expected as part of riding a mountain bicycle, running or hiking;<br>
+      you fully and voluntarily assume all such risk, dangers and hazards and the possibility of damage to your property and serious and/or permanent personal and bodily injury including the risk of
+      the use of the trails of TAROKO TRAIL PARK, its facilities and amenities, and/or participating in any event at TAROKO TRAIL PARK, are done entirely at your own risk and subject to the rules, terms and conditions of use;<br>
+      you release, indemnify, hold harmless and free of liability Keystone Active (Pty) Ltd (Reg no 2020/003655/07) t/a TAROKO TRAIL PARK, its shareholders, directors, employees, agents and/or any parties associated with them, including the owners and lessor of the premises (“the Indemnified Parties”) for any claim of whatsoever nature that may arise from the use of the trials, facilities and amenities whether or not such claim is as a result of the negligence of an indemnified party;<br>
+      neither you, nor your estate, executors, dependents, administrators, legal representatives, assignees or successors in interest shall have any claim against the indemnified parties for any loss or damage sustained as a result of the use of TAROKO TRAIL PARK trails, the facilities and amenities, which claims include but are not limited to, death, injury, illness, any loss or damage to any property occurring within the premises of TAROKO TRAIL PARK, or arising from the participation in any event hosted at TAROKO TRAIL PARK;
+      you have read, understood and accepted the rules, terms, conditions and procedures of TAROKO TRAIL PARK;<br>
+      you agree to adhere to all the applicable rules, terms and conditions set out by the owners in respect of TAROKO TRAIL PARK.<br>
+      Should you not agree to the above you must not enter TAROKO TRAIL PARK.</p>
+  </div>
+</div>
+ </section>
+ 
+<!-- FOOTER LINKS SECTION -->
+<section class="footer-links">
+  <div class="container">
+    <div class="footer-card-body">
+      <div class="footer-row">
+      <div class="footer-card-details">
+        <ul class="footer-link-details">
+          <li>
+            <div class="footer-card-title">
+              <h2>Contact Us</h2>
+            </div>
+          </li>
+          <li>
+            <div class="cell-phone">
+              <img src="images/mobile.svg" alt="mobile">
+            </div>
+            <div class="mobile-number">
+              <a href="tel:+27 12 345 4567">+27 12 345 4567</a>
+            </div>
+          </li>
+          <li>
+            <div class="landline">
+              <img src="images/landline-head.svg" alt="landline">
+            </div>
+            <div class="landline-number">
+              <a href="tel:+011 234 897">011 234 897</a>
+            </div>
+          </li>
+          <li>
+            <div class="email">
+              <img src="images/envelope.svg" alt="envelope">
+            </div>
+            <div class="email-add">
+              <a href="mailto:info@thabatrails.co.za">info@thabatrails.co.za</a>
+            </div>
+          </li>
+        </ul>
+         <!-- MENU-LINKS -->
+         <ul class="footer-menu-links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Activities</a></li>
+           <li><a href="#">Trails</a></li>
+           <li><a href="#">Upcoming Events</a></li>
+           <li><a href="#">Visit Our Shop</a></li>
+           <li><a href="#">Cafe</a></li>
+           <li><a href="#">Wildlife</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact Us</a></li>
+         </ul>
+      </div>
+      <div class="google-map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.7984358964372!2d28.045755075087705!3d-26.300633567907624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9505968c16aaab%3A0xf9765b73d47a5ab3!2sThaba%20Trails!5e0!3m2!1sen!2sza!4v1718714533806!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- FORMIDABLE FORM START -->
+  <div class="formidable-form">
+    <div class="frm_forms" id="frm_form_1_container">
+      <form enctype="multipart/form-data" method="post" class="frm-show-form" id="form_contact-form">
+        <div class="frm_form_fields">
+    
+          <!-- First Name and Last Name in one row -->
+          <div class="frm_fields_container">
+            <div id="frm_field_7_container" class="frm_form_field form-field frm_none_container frm_half">
+              <label for="field_7jy5k" id="field_7jy5k_label" class="frm_primary_label">
+                <span class="frm_required" aria-hidden="true"></span>
+              </label>
+              <input type="text" id="field_7jy5k" name="item_meta[7]" value="" placeholder="First Name" data-invmsg="First Name is invalid" aria-invalid="false">
+            </div>
+    
+            <div id="frm_field_8_container" class="frm_form_field form-field frm_none_container frm_half">
+              <label for="field_z8s8s" id="field_z8s8s_label" class="frm_primary_label">
+                <span class="frm_required" aria-hidden="true"></span>
+              </label>
+              <input type="text" id="field_z8s8s" name="item_meta[8]" value="" placeholder="Last Name" data-invmsg="Last Name is invalid" aria-invalid="false">
+            </div>
+          </div>
+    
+          <!-- Email and Phone Number in one row -->
+          <div class="frm_fields_container">
+            <div id="frm_field_3_container" class="frm_form_field form-field frm_required_field frm_none_container frm_half">
+              <label for="field_29yf4d" id="field_29yf4d_label" class="frm_primary_label">
+                <span class="frm_required" aria-hidden="true"></span>
+              </label>
+              <input type="email" id="field_29yf4d" name="item_meta[3]" value="" placeholder="Email" data-reqmsg="Email cannot be blank." aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false">
+            </div>
+    
+            <div id="frm_field_9_container" class="frm_form_field form-field frm_none_container frm_half">
+              <label for="field_228pr" id="field_228pr_label" class="frm_primary_label">
+                
+              </label>
+              <input type="text" id="field_228pr" name="item_meta[9]" value="" placeholder="Phone" data-invmsg="Phone is invalid" aria-invalid="false">
+            </div>
+          </div>
+    
+          <!-- Message Body full width -->
+          <div id="frm_field_5_container" class="frm_form_field form-field frm_required_field frm_none_container frm12 frm_first">
+            <label for="field_9jv0r1" id="field_9jv0r1_label" class="frm_primary_label">
+              <span class="frm_required" aria-hidden="true"></span>
+            </label>
+            <textarea name="item_meta[5]" id="field_9jv0r1" rows="5" placeholder="Message" data-reqmsg="Message cannot be blank." aria-required="true" data-invmsg="Message is invalid" aria-invalid="false"></textarea>
+          </div>
+    
+        </div>
+      </form>
+    </div>
+    
+
+      <!-- CONSENT -->
+      <div id="frm_field_18_container" class="form-field">
+        <div class="frm_checkbox">
+          <input type="radio" name="item_meta[18][]" id="field_9cfpm-0" value="Yes" aria-invalid="false">
+          <label for="field_9cfpm-0">Yes, I consent to receive communication from Thaba Trails</label>
+        </div>
+      </div>
+      
+
+      <!-- RECAPTCHA -->
+      <div id="frm_field_10_container" class="frm_form_field form-field  frm_none_container">
+        <label for="g-recaptcha-response" id="field_w16wb_label" class="frm_primary_label">
+          <span class="frm_required" aria-hidden="true"></span>
+        </label>
+        <div id="field_w16wb" class="frm-g-recaptcha" data-sitekey="6Lfpxe8pAAAAAORY89buQhjrVUkPjGSzcNmUAEAu" data-size="normal" data-theme="light" data-rid="0"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-jbfgshc0a8ce" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfpxe8pAAAAAORY89buQhjrVUkPjGSzcNmUAEAu&amp;co=aHR0cHM6Ly90aGFiYXRyYWlscy5raW5zdGEuY2xvdWQ6NDQz&amp;hl=en&amp;v=TqxSU0dsOd2Q9IbI7CpFnJLD&amp;theme=light&amp;size=normal&amp;cb=l89st9yx99mn"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+         </div>
+
+         <!-- SUBMIT BUTTON -->
+      <div id="frm_field_6_container" class="frm_form_field form-field ">
+        <div class="frm_submit">
+     <a href="#">Submit</a> 
+   
+      </div>
+      </div>
+        <input type="hidden" name="item_key" value="">
+              <div class="frm__663b3be67f7ee">
+              <label for="frm_email_1" style="display:none;">
+                If you are human, leave this field blank.				</label>
+              <input id="frm_email_1" type="text" class="frm_verify" name="frm__663b3be67f7ee" value="" autocomplete="off" style="display:none;">
+            </div>
+          </div>
+      </div>
+      <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1718736418984"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>
+      </div>
+  </div> 
+  <!-- END FORMIDABLE FORM -->
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BOTTOM FOOTER -->
+<section class="bottom-footer">
+  <div class="bottom-footer-title">
+    <h4>&copy Thaba trails 2024 | By <a href="https://powerof9.co.za" target="_blank">Power of 9</a></h4>
+  </div>
+  <div class="back-to-top">
+    <a href="#top" class="footer_btn" title="To the top">
+        <img src="images/icon-back-to-top.png" alt="">
+    </a>
+</div> 
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+  <!-- FLICKITY JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!--  TOGGLE FUNCTION SOCIAL ICONS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleIconsBtn = document.getElementById('toggleIcons');
+    const socialIcons = document.querySelectorAll('.social-icon a:not(:first-child)');
+    const weatherWidget = document.querySelector('.weather-widget');
+
+    let iconsVisible = true; // Icons are initially visible
+
+    toggleIconsBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default action of scrolling to top
+
+        socialIcons.forEach(icon => {
+            icon.style.display = iconsVisible ? 'none' : 'inline-block';
+        });
+
+        // Toggle the weather and date widget
+        weatherWidget.style.display = iconsVisible ? 'none' : 'block';
+
+        iconsVisible = !iconsVisible;
+    });
+});
+
+</script>
+
+<!-- WEATHER AND DATE WIDGETS -->
+<script>
+$(document).ready(function() {
+    // Fetch weather data
+    function updateWeather() {
+        var apiKey = '0c7f6d19b737e51b5d836828c6f539da'; //API KEY
+        var cityId = '3369157'; // Cape Town city ID
+        var url = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&appid=${apiKey}`;
+
+        $.getJSON(url, function(data) {
+            var temp = data.main.temp;
+            var weatherDescription = data.weather[0].description;
+            $('#current-weather').text(`${temp}°C, ${weatherDescription}`);
+        }).fail(function() {
+            $('#current-weather').text('Unable to fetch weather data.');
+        });
+    }
+
+    // Update date
+    function updateDate() {
+        var today = new Date();
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = today.toLocaleDateString('en-US', options);
+        $('#current-date').text(formattedDate);
+    }
+
+    updateWeather();
+    updateDate();
+
+    // Optionally, update weather and date every hour
+    setInterval(function() {
+        updateWeather();
+        updateDate();
+    }, 3600000);
+});
+</script>
+
+</body>
+
+</html>
