@@ -81,30 +81,19 @@ li {
   background-color: rgba(7, 7, 7, 0.434);
   width: 100px;
   padding: 10px 0;
+  gap: 5px;
 }
 
 .social-icon a:not(:last-child) {
   margin-bottom: 15px;
 }
-
 .social-icon img {
   width: 50px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
-
 .weather-widget {
-  margin-top: 15px;
   text-align: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  /* top: 75%;  */
-  right: 0;
-  z-index: 1;
-  background-color: rgba(7, 7, 7, 0.434);
-  width: 100px;
-  padding: 10px 0;
 }
 
 /* NAVBAR MENU */
@@ -130,7 +119,7 @@ input[type=checkbox] {
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 46px;
 }
 
 /* CONTACT-BANNER SECTION */
@@ -540,9 +529,6 @@ hr {
   .bottom-footer-title a {
     font-size: 12px;
   }
-  .weather-widget {
-    top: 41%;
-  }
 }
 
 
@@ -580,10 +566,6 @@ hr {
   .bottom-footer-title a {
     font-size: 12px;
   }
-
-  .weather-widget {
-    top: 41%;
-  }
  
 }
 
@@ -610,9 +592,6 @@ hr {
   }
   .bottom-footer-title a {
     font-size: 17px;
-  }
-  .weather-widget {
-    top: 75%;
   }
 
 }/*# sourceMappingURL=style.css.map */

@@ -83,31 +83,19 @@ li {
   background-color: rgba(7, 7, 7, 0.434);
   width: 100px;
   padding: 10px 0;
+  gap: 5px;
 }
 
 .social-icon a:not(:last-child) {
   margin-bottom: 15px;
 }
-
 .social-icon img {
   width: 50px;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
 }
-
 .weather-widget {
-  margin-top: 15px;
   text-align: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
- /*  top: 75%; */
-  right: 0;
-  z-index: 1;
-  background-color: rgba(7, 7, 7, 0.434);
-  width: 100px;
-  padding: 10px 0;
 }
 
 
@@ -132,7 +120,7 @@ input[type=checkbox] {
 /* HAMBURGER MENU */
 .hamburger {
   display: none;
-  font-size: 30px;
+  font-size: 46px;
 }
 
 /* CIRCLES ACTIVITIES */
@@ -141,11 +129,23 @@ input[type=checkbox] {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
+  
 }
 
-.bike-image img,
-.walking-image img,
-.doggie-image img {
+.mountain-biking,
+.walking-running,
+.doggie-trail {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.bike-img,
+.running-img,
+.walking-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 180px;
   border: 6px solid var(--header-color);
@@ -157,49 +157,47 @@ input[type=checkbox] {
   z-index: 1;
 }
 
-.bike-title p,
-.walking-title p,
-.doggies-title p {
+.mountain-title,
+.doggie-title,
+.walking-title {
+  margin-top: 40%;
   text-align: center;
-  margin-top: 80%;
+  color: var(--text-color);
 }
 
-.bike-image img {
+.bike-img .img-bike img{
   transition: transform 0.3s ease;
 }
 
-.bike-title p {
+.mountain-title {
   transition: color 0.3s ease;
   color: var(--text-color);
 }
 
-.mountain-biking:hover .bike-image img {
+.mountain-biking:hover .bike-img .img-bike img {
   transform: scale(1.1); /* Zoom in effect */
   fill: var(--footer-bg); /* Change color to green */
 }
 
-.mountain-biking:hover .bike-title p {
+.mountain-biking:hover .mountain-title {
   color: var(--footer-bg);
 }
 
-.walking-image img {
+.running-img .img-bike img {
   transition: transform 0.3s ease;
 }
 
-.walking-title p {
+.walking-title {
   transition: color 0.3s ease;
   color: var(--text-color);
 }
 
-.walking:hover .walking-image img {
+.walking-running:hover .running-img .img-bike img {
   transform: scale(1.1);
 }
 
-.walking:hover .walking-image img path {
-  fill: var(--footer-bg);
-}
 
-.walking:hover .walking-title p {
+.walking-running:hover .walking-title {
   color: var(--footer-bg);
 }
 
@@ -293,8 +291,6 @@ input[type=checkbox] {
 
 .card-col-1 {
   background-color: var(--card-bg);
-  padding-left: 12%;
-  padding-right: 8%;
   padding-top: 10%;
 }
 
@@ -965,9 +961,6 @@ input[type=checkbox] {
   .doggies-title p {
     margin-top: 20%;
   }
-  .weather-widget {
-    top: 41%;
-  }
 
 }
 
@@ -1052,9 +1045,6 @@ input[type=checkbox] {
   .cafe-col-1 {
     order: 2;
   }
-  .weather-widget {
-    top: 41%;
-  }
 }
 
 
@@ -1121,8 +1111,5 @@ input[type=checkbox] {
   }
   .cafe-col-1 {
     order: 0;
-  }
-  .weather-widget {
-    top: 75%;
   }
 }/*# sourceMappingURL=style.css.map */
