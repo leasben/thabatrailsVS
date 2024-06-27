@@ -110,7 +110,6 @@ li {
   color: var(--menu-hover-color);
 }
 
-/* RESPONSIVE NAVBAR MENU STARTS */
 /* CHECKBOX HACK */
 input[type=checkbox] {
   display: none;
@@ -147,8 +146,8 @@ input[type=checkbox] {
   font-size: 17px;
   line-height: 30px;
   padding-top: 20px;
- /*  padding-left: 9%;
-  padding-right: 8%; */
+  padding-left: 10px;
+  padding-right: 10px; 
 }
 
 /* OPERATING HOURS DETAILS */
@@ -157,6 +156,8 @@ input[type=checkbox] {
   /* justify-content: space-evenly; */
   padding-top: 45px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .hours-title h2 {
@@ -206,11 +207,6 @@ tr td {
 .public-holiday {
   padding: 7px 0;
 }
-
-/*  .footer-row {
-  display: flex;
-  justify-content: space-between;
-} */ 
 
 .footer-links {
   padding-right: 9%;
@@ -290,9 +286,9 @@ tr td {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 25px;
-  width: 80%;
   gap: 50px;
-  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .permits-card-image img {
@@ -345,6 +341,10 @@ hr {
   margin-top: 50px;
 }
 /* FORMIDABLE FORM */
+
+.formidable-form {
+  padding: 0 10px;
+}
 
 .frm_fields_container {
   display: flex;

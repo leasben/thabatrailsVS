@@ -144,14 +144,16 @@ input[type=checkbox] {
   font-size: 17px;
   line-height: 30px;
   padding-top: 20px;
-  /* padding-left: 9%;
-  padding-right: 8%; */
+  padding-left: 10px;
+  padding-right: 10px; 
 }
+
 
 /* faq section */
 .faq {
   border-bottom: 5px solid var(--upcomin-events-bg);
   padding-bottom: 5%;
+  overflow-x: hidden; 
 }
 
 .faq-heading h2 {
@@ -168,19 +170,23 @@ input[type=checkbox] {
   font-size: 17px;
   line-height: 30px;
   color: var(--text-color);
-  padding-left: 8%;
-  padding-right: 10%;  
- padding: 6px 0;
-
+  padding: 6px 10px;
+  position: relative; /* Ensure relative positioning for children */
 }
 
-.faq ul li:not(:nth-last-of-type(odd)) {
-  background-color: var(--card-bg); 
-  
+.faq ul li:not(:nth-child(even)) {
+  color: var(--footer-bg);
 }
 
-.faq ul li:not(:nth-last-of-type(even)) {
-  color: var(--trails-bg);
+.faq ul li:not(:nth-child(odd))::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  right: -9999px;
+  bottom: 0;
+  background-color: var(--card-bg);
+  z-index: -1; /* Ensure the background is behind the content */
 }
 
 /* FOOTER LINKS SECTION */
@@ -406,7 +412,7 @@ input[type=checkbox] {
   }
   .footer-row {
     flex-direction: column;
-    padding: 40px 0;
+    padding: 40px 10px;
   }
   .footer-card-details {
     text-align: start;
@@ -459,7 +465,7 @@ input[type=checkbox] {
 
   .footer-row {
     flex-direction: column;
-    padding: 40px 0;
+    padding: 40px 10px;
   }
   .footer-card-details {
     text-align: start;
@@ -503,7 +509,7 @@ input[type=checkbox] {
   .footer-row {
     flex-direction: row;
     justify-content: space-evenly;
-    /* padding: 40px; */
+    padding: 40px 10px; 
     gap: 20px;
   }
   .footer-card-details {

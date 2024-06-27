@@ -225,6 +225,7 @@ input[type=checkbox] {
 
 .row {
   display: grid;
+  border: 1px solid red;
 }
 
 .card-heading h2 {
@@ -540,6 +541,8 @@ input[type=checkbox] {
   align-items: center;
   justify-content: center;
   height: 100px;
+  padding-left: 10px;
+  padding-right: 10px
 }
 
 .events-title h2 {
@@ -552,7 +555,7 @@ input[type=checkbox] {
 .event-card-row {
   display: grid;
   gap: 100px;
-  padding: 0 95px;
+  
 }
 
 .event-card {
@@ -918,6 +921,8 @@ input[type=checkbox] {
    .footer-row {
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px
    }
   .footer-card-details {
     text-align: center;
@@ -997,7 +1002,8 @@ input[type=checkbox] {
   .event-card-row {
     grid-template-columns: 1fr;
     gap: 50px;
-    padding: 0 40px;
+    padding-left: 10px;
+    padding-right: 10px
   }
   .shop-col-2 {
     padding-top: 5%;
@@ -1017,6 +1023,8 @@ input[type=checkbox] {
   .footer-row {
     display: grid;
     grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px
    }
   .footer-card-details {
     text-align: center;
@@ -1068,13 +1076,14 @@ input[type=checkbox] {
   .event-card-row {
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
-    padding: 0 95px;
+    padding-left: 10px;
+    padding-right: 10px
   }
 
   .footer-row {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0;
+    padding: 40px 10px;
     gap: 20px;
   }
   .google-map-container {
