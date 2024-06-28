@@ -225,7 +225,6 @@ input[type=checkbox] {
 
 .row {
   display: grid;
-  border: 1px solid red;
 }
 
 .card-heading h2 {
@@ -781,6 +780,7 @@ input[type=checkbox] {
 .frm-g-recaptcha {
   margin-top: 20px;
 }
+
 
 /* MOBILE DEVICE */
 @media (max-width: 768px) {
