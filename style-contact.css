@@ -533,6 +533,9 @@ hr {
   .bottom-footer-title a {
     font-size: 12px;
   }
+  .social-icon {
+    z-index: 10;
+  }
 }
 
 

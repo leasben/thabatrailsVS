@@ -645,6 +645,9 @@ hr {
     display: none;
   }
 
+  .social-icon {
+    z-index: 10;
+  }
 }
 
 

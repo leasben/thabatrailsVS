@@ -979,6 +979,9 @@ input[type=checkbox] {
   .doggies-title p {
     margin-top: 20%;
   }
+  .social-icon {
+    z-index: 10;
+  }
 
 }
 

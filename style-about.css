@@ -453,6 +453,9 @@ input[type=checkbox] {
     .bottom-footer-title a {
       font-size: 10px;
     }
+    .social-icon {
+      z-index: 10;
+    }
 }
 
 

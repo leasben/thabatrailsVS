@@ -1,35 +1,14 @@
-//TOGGLE FUNCTION SOCIAL ICONS
+//TOGGLE FUNCTION SOCIAL ICONS & WEATHER WIDGETS
 
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleIconsBtn = document.getElementById('toggleIcons');
-    const socialIcons = document.querySelectorAll('.social-icon a:not(:first-child)');
-    const weatherWidget = document.querySelector('.weather-widget');
-
-    let iconsVisible = false; // Icons are initially visible
-
-    toggleIconsBtn.addEventListener('click', function(e) {
+$(document) .ready(function() {
+    $("#toggleIcons").click(function(e) {
         e.preventDefault(); // Prevent default action of scrolling to top
 
-        socialIcons.forEach(icon => {
-            icon.style.display = iconsVisible ? 'none' : 'inline-block';
-        });
+        $(".social-icon a:not(:first-child)").slideToggle();
+        $(".weather-widget").slideToggle();
 
-        // Toggle the weather and date widget
-        weatherWidget.style.display = iconsVisible ? 'none' : 'block';
-
-        iconsVisible = !iconsVisible;
     });
 });
-
-
-/* $(document).ready(function() {
-    $('#toggleIcons').click(function(e) {
-        e.preventDefault();
-
-        $('.social-icon a:not(:first-child)').toggle();
-        $('.weather-widget').toggle();
-    });
-}); */
 
 //BACK TO TOP
  
