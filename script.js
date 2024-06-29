@@ -21,6 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+/* $(document).ready(function() {
+    $('#toggleIcons').click(function(e) {
+        e.preventDefault();
+
+        $('.social-icon a:not(:first-child)').toggle();
+        $('.weather-widget').toggle();
+    });
+}); */
+
 //BACK TO TOP
  
   // Wait for the DOM to be fully loaded
