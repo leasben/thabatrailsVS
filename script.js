@@ -4,34 +4,26 @@ $(document) .ready(function() {
     $("#toggleIcons").click(function(e) {
         e.preventDefault(); // Prevent default action of scrolling to top
 
-        $(".social-icon a:not(:first-child)").slideToggle();
-        $(".weather-widget").slideToggle();
+        $(".social-icon a:not(:first-child)").slideToggle("slow");
+        $(".weather-widget").slideToggle("slow");
 
     });
 });
 
 //BACK TO TOP
- 
-  // Wait for the DOM to be fully loaded
-  document.addEventListener("DOMContentLoaded", function() {
-    var backToTop = document.getElementById('backToTop');
-
-    // Function to control visibility based on scroll position
-    function toggleBackToTop() {
-        if (window.scrollY > 100) { // Adjust 100 to the scroll position where you want it to appear
-            backToTop.classList.add('show');
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#backToTop').fadeIn();
         } else {
-            backToTop.classList.remove('show');
+            $('#backToTop').fadeOut();
         }
-    }
+    });
 
-    // Listen to the scroll event
-    window.addEventListener('scroll', toggleBackToTop);
-
-    // Initial check in case the user starts already scrolled down
-    toggleBackToTop();
+    $('#backToTop').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 100);
+    }); 
 });
-
 
 
 // WEATHER AND DATE WIDGETS
